@@ -1,8 +1,8 @@
-# Tutorial - Deploy QwQ-32B-Preview using Inferless
+# Tutorial - Deploy Qwen's QwQ-32B-Preview using Inferless
 
 
 ## TL;DR:
-- Deployment of Ministral-8B-Instruct model using [vllm](https://github.com/vllm-project/vllm).
+- Deployment of QwQ-32B-Preview model using [vllm](https://github.com/vllm-project/vllm).
 - You can expect an average tokens/sec of `21.73` and a latency of `11.71 sec` for generating a text of `256` tokens. This setup has an average cold start time of `39.44 sec`.
 - Dependencies defined in `inferless-runtime-config.yaml`.
 - GitHub/GitLab template creation with `app.py`, `inferless-runtime-config.yaml` and `inferless.yaml`.
