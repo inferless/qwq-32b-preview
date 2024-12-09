@@ -1,6 +1,6 @@
 version: 1.0.0
 
-name: Ministral-8B-Instruct
+name: QwQ-32B-Preview
 import_source: GIT
 
 # you can choose the options between ONNX, TENSORFLOW, PYTORCH
@@ -33,7 +33,6 @@ configuration:
 env:
   # Add your environment variables here
   # ENV: 'PROD'
-  HF_TOKEN: '<YOUR_HUGGINGFACE_ACCESS_TOKEN>'
 secrets:
   # Add your secret ids here you can find it by running `inferless secrets list`
 optional:
@@ -41,6 +40,6 @@ optional:
   input_file_name: input.json
   output_file_name: output.json
   runtime_file_name: inferless-runtime-config.yaml
-model_url: https://github.com/inferless/Ministral-8B-Instruct.git
+model_url: https://github.com/inferless/QwQ-32B-Preview.git
 provider: GITHUB
 io_schema: true
