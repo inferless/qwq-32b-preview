@@ -3,7 +3,7 @@
 
 ## TL;DR:
 - Deployment of Ministral-8B-Instruct model using [vllm](https://github.com/vllm-project/vllm).
-- You can expect an average tokens/sec of `21.73` and a latency of `11.71 sec` for generating a text of `256` tokens. This setup has an average cold start time of `30.43 sec`.
+- You can expect an average tokens/sec of `21.73` and a latency of `11.71 sec` for generating a text of `256` tokens. This setup has an average cold start time of `39.59 sec`.
 - Dependencies defined in `inferless-runtime-config.yaml`.
 - GitHub/GitLab template creation with `app.py`, `inferless-runtime-config.yaml` and `inferless.yaml`.
 - Model class in `app.py` with `initialize`, `infer`, and `finalize` functions.
@@ -22,9 +22,6 @@ This will create a copy of the repository in your own GitHub account, allowing y
 To access the custom runtime window in Inferless, simply navigate to the sidebar and click on the Create new Runtime button. A pop-up will appear.
 
 Next, provide a suitable name for your custom runtime and proceed by uploading the **inferless-runtime-config.yaml** file given above. Finally, ensure you save your changes by clicking on the save button.
-
-### Add Your Hugging Face Access Token
-Go into the `inferless.yaml` and replace `<YOUR_HUGGINGFACE_ACCESS_TOKEN>` with your hugging face access token. Make sure to check the repo is private to protect your hugging face token.
 
 ### Import the Model in Inferless
 Log in to your inferless account, select the workspace you want the model to be imported into and click the `Add a custom model` button.
