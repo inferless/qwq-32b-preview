@@ -1,5 +1,7 @@
 # Tutorial - Deploy Qwen's QwQ-32B-Preview using Inferless
+[QwQ-32B-Preview](https://huggingface.co/Qwen/QwQ-32B-Preview) is a large language model developed by the Qwen Team, focusing on enhancing AI's analytical and problem-solving abilities. It employs a dense transformer architecture with 32.5 billion parameters, 64 layers, and a context window of 32,768 tokens, incorporating advanced components such as Rotary Position Embedding (RoPE), SwiGLU activation functions, RMSNorm normalization, and Attention QKV bias. 
 
+This design enables the model to process extensive inputs effectively, making it particularly adept at complex reasoning tasks. However, as a preview release, it exhibits certain limitations, including potential language mixing, recursive reasoning loops, and areas requiring improved safety measures.
 
 ## TL;DR:
 - Deployment of QwQ-32B-Preview model using [vllm](https://github.com/vllm-project/vllm).
