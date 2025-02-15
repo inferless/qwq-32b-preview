@@ -1,6 +1,6 @@
 version: 1.0.0
 
-name: QwQ-32B-Preview
+name: qwq-32b-preview
 import_source: GIT
 
 # you can choose the options between ONNX, TENSORFLOW, PYTORCH
@@ -40,6 +40,6 @@ optional:
   input_file_name: input.json
   output_file_name: output.json
   runtime_file_name: inferless-runtime-config.yaml
-model_url: https://github.com/inferless/QwQ-32B-Preview.git
+model_url: https://github.com/inferless/qwq-32b-preview.git
 provider: GITHUB
 io_schema: true
