@@ -1,13 +1,18 @@
 from vllm import LLM
 from vllm.sampling_params import SamplingParams
 from transformers import AutoTokenizer
+import inferless
+
+app = inferless.Cls(gpu="A100")
 
 class InferlessPythonModel:
+    @app.load
     def initialize(self):
         model_id = "Qwen/QwQ-32B-Preview"
         self.llm = LLM(model=model_id,gpu_memory_utilization=0.9,max_model_len=5000)
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
 
+    @app.infer
     def infer(self, inputs):
         prompts = inputs["prompt"]
         temperature = inputs.get("temperature",0.7)
