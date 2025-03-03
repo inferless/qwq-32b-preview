@@ -3,4 +3,5 @@ build:
   python_packages:
     - "vllm==0.6.3.post1"
     - "transformers==4.45.2"
-    - "huggingface-hub==0.25.2"
+    - "hf-transfer==0.1.9"
+    - "huggingface-hub==0.27.1"
